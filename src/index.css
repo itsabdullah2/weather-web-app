@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --color-orange: rgb(255, 125, 26);
+  --color-paleOrange: rgb(255, 237, 224);
+  --color-dark: rgba(0, 0, 0, 0.75);
+  --color-darkDark: rgba(0, 0, 0, 1);
+  --color-veryDarkBlue: rgb(29, 32, 37);
+  --color-darkGrayish: rgb(221, 221, 221);
+  --color-grayishBlue: rgb(182, 188, 200);
+  --color-lightGrayishBlue: rgb(247, 248, 253);
+  --color-white: rgb(255, 255, 255);
+  --color-opacityBlue: rgba(29, 32, 37, 0.7);
+  --color-transition: 0.3s;
+  --color-spacing: 20px;
+  --color-borderColor: rgb(104, 112, 125);
+  --color-borderWidth: 2px;
+  --color-rounded: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: var(--color-orange);
+  color: white;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.content-container {
+  background-image: url('./assets/background.jpg');
+}
