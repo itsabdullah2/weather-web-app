@@ -1,4 +1,13 @@
-const WeatherDetails = () => {
+import { FC } from 'react';
+
+type Props = {
+  humidity: number;
+  wind: number;
+  sunrise: string;
+  sunset: string;
+};
+
+const WeatherDetails: FC<Props> = ({ humidity, wind, sunrise, sunset }) => {
   const commonStyles =
     'flex items-center justify-between text-[18px] text-grayishBlue !pb-2';
 
@@ -11,19 +20,19 @@ const WeatherDetails = () => {
         {/* Map over the array of data in here... */}
         <li className={`${commonStyles}`}>
           <span>Humidity</span>
-          <span>0%</span>
+          <span>{humidity}%</span>
         </li>
         <li className={`${commonStyles}`}>
           <span>Wind</span>
-          <span>0km/h</span>
+          <span>{wind}km/h</span>
         </li>
         <li className={`${commonStyles}`}>
           <span>Sunrise</span>
-          <span>00:00 AM</span>
+          <span>{sunrise}</span>
         </li>
         <li className={`${commonStyles} !pb-1`}>
           <span>Sunset</span>
-          <span>00:00 PM</span>
+          <span>{sunset}</span>
         </li>
       </ul>
     </div>
