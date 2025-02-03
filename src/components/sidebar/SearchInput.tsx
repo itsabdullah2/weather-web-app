@@ -3,7 +3,7 @@ import searchIcon from '../../assets/search.png';
 
 interface Props {
   searchValue: string;
-  onChange: () => void;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   handleSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
 }
 
