@@ -11,7 +11,7 @@ export async function getWeatherData(lat: number, lon: number) {
 }
 // Get coordinate data
 export async function getCityCoordinates(cityName: string) {
-  const coordinatesApi = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${API_KEY}`;
+  const coordinatesApi = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${API_KEY}`;
 
   return fetch(coordinatesApi)
     .then((response) => response.json())
